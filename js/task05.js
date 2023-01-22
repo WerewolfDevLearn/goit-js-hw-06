@@ -1,18 +1,9 @@
-const decrementBtn = document.querySelector('[data-action="decrement"]');
-const incrementBtn = document.querySelector('[data-action="increment"]');
-const viewAria = document.querySelector('#value');
-let value = 0;
+const inputField = document.querySelector('input#name-input');
+const outputField = document.querySelector('span#name-output');
+console.log(inputField);
 
-const decrementHandle = () => {
-  value -= 1;
-  viewAria.textContent = value;
-};
-const incrementHandle = () => {
-  value += 1;
-  viewAria.textContent = value;
-};
+function getInputValue() {
+  outputField.textContent = inputField.value === '' ? 'Anonymous' : inputField.value;
+}
 
-decrementBtn.addEventListener('click', decrementHandle);
-incrementBtn.addEventListener('click', incrementHandle);
-
-// console.log(value);
+inputField.addEventListener('input', getInputValue);
