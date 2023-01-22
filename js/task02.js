@@ -1,10 +1,11 @@
-const list = document.querySelector('ul#categories');
+const list = document.querySelector('ul#ingredients');
+const ingredients = ['Potatoes', 'Mushrooms', 'Garlic', 'Tomatos', 'Herbs', 'Condiments'];
 
-const numberCategories = list.childElementCount;
-
-const listChilds = document.querySelectorAll('li.item');
-
-listChilds.forEach(child => {
-  console.log('Category:', child.querySelector('h2').textContent);
-  console.log('Elements:', child.querySelectorAll('li').length);
+const markup = ingredients.map(ingredient => {
+  const elem = document.createElement('li');
+  elem.textContent = ingredient;
+  elem.classList.add('item');
+  return elem;
 });
+
+list.append(...markup);

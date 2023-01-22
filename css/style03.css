@@ -1,0 +1,25 @@
+* {
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+.gallery {
+  padding-top: 20px;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+li {
+  width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+img {
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
