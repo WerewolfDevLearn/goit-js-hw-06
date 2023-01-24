@@ -1,20 +1,34 @@
 .container {
-  min-width: fit-content;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   width: 600px;
+
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .task {
-  flex-basis: 100px;
-  text-align: center;
+  flex-basis: 120px;
+  border-width: 4px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: rgba(18, 179, 48, 0.213);
 }
 .task-link {
-  color: black;
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 24px;
+  line-height: 40px;
+
+  background-color: rgba(0, 255, 247, 0.584);
+  text-align: center;
+  color: rgb(13, 4, 0);
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
   text-decoration: none;
 }
 .go-back {
